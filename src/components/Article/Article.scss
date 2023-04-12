@@ -1,0 +1,64 @@
+@import '../../constants/constants.scss';
+
+.article {
+  min-width: $blocks-max-width;
+  min-width: $blocks-max-width;
+
+  &__description {
+    font-size: 16px;
+    color: $secondary-text-color;
+  }
+
+  &__body {
+    font-size: 18px;
+    display: block;
+    white-space: pre-wrap;
+  }
+
+  &__sub-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+
+    border-radius: 8px;
+    padding: 10px 15px;
+    min-width: 72px;
+
+    margin: 10px;
+  }
+}
+
+.button {
+  &__delete {
+    color: red;
+    border: 1px solid red;
+
+    &:hover {
+      color: red;
+      background-color: $error-hover-color;
+    }
+  }
+
+  &__edit {
+    color: $success-color;
+    border: 1px solid $success-color;
+    display: inline-block;
+    text-align: center;
+    height: 44px;
+
+    &:hover {
+      color: $success-color;
+      background-color: $success-hover-color;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

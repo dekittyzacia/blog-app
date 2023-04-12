@@ -1,0 +1,8 @@
+@import '../../constants/constants.scss';
+
+.new-article {
+  &__title {
+    margin: 10px auto;
+    text-align: center;
+  }
+}

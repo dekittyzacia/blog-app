@@ -1,0 +1,85 @@
+@import '../../constants/constants.scss';
+
+.article-header {
+  max-width: $blocks-max-width;
+  min-width: $blocks-max-width;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__title-block {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  &__like-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-size: 1.3em;
+    color: $secondary-text-color;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 700px;
+    line-height: 30px;
+    font-size: 2em;
+  }
+
+  &__author-info {
+    align-self: flex-start;
+    display: flex;
+    text-align: right;
+  }
+
+  &__avatar {
+    min-height: 46px;
+    min-width: 46px;
+    margin: 10px;
+  }
+
+  &__taglist {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+  }
+
+  &__tag {
+    display: block;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: break-spaces;
+  }
+}
+
+.header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.like-button {
+  &--able {
+    color: black;
+  }
+
+  &--liked {
+    color: red;
+  }
+}

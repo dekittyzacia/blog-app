@@ -1,0 +1,54 @@
+@import '../../constants/constants.scss';
+
+.article-card {
+  max-width: $blocks-max-width;
+  min-width: $blocks-max-width;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 700px;
+    line-height: 30px;
+  }
+
+  &__autor-info {
+    align-self: flex-start;
+    display: flex;
+  }
+
+  &__avatar {
+    min-height: 46px;
+    min-width: 46px;
+    margin: 10px;
+  }
+
+  &__taglist {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+  }
+
+  &__tag {
+    display: block;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

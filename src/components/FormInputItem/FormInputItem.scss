@@ -1,0 +1,23 @@
+@import '../../constants/constants.scss';
+
+.input {
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    border: 1px solid $secondary-text-color;
+    border-radius: 5px;
+  }
+
+  &__error {
+    color: red;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

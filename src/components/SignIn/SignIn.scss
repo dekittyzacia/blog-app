@@ -1,0 +1,65 @@
+@import '../../constants/constants.scss';
+
+.sign-in {
+  max-width: $sign-block-max-width;
+  min-width: $sign-block-max-width;
+
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px auto;
+  }
+
+  &__error {
+    color: red;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: $sign-input-width;
+    max-width: $sign-input-width;
+  }
+
+  &__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    border: 1px solid $secondary-text-color;
+    border-radius: 5px;
+  }
+
+  &__submit-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: $accent-color;
+
+    border-radius: 8px;
+    color: $text-color;
+    padding: 10px 15px;
+  }
+
+  &__sign-up-link {
+    margin: 10px auto;
+    font-size: 15px;
+    width: max-content;
+    color: $secondary-text-color;
+  }
+}

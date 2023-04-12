@@ -1,0 +1,67 @@
+@import '../../constants/constants.scss';
+
+.logged-header {
+  min-height: 80px;
+  width: 100%;
+  background-color: $header-color;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  &__head {
+    display: block;
+    margin: 0 auto 0 20px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+  &__user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.button {
+  text-decoration: none;
+  color: $text-color;
+
+  padding: 0;
+  font: inherit;
+  background-color: transparent;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  margin: 0 20px;
+  min-width: 100px;
+  min-height: 50px;
+  border-radius: 8px;
+
+  &-primary {
+    border: 1px solid $text-color;
+    background-color: $accent-color;
+  }
+
+  &-outlined {
+    border: 1px solid $text-color;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}

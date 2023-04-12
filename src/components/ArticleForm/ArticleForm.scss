@@ -1,0 +1,74 @@
+@import '../../constants/constants.scss';
+
+.article-form {
+  max-width: $blocks-max-width;
+  min-width: $blocks-max-width;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    max-width: $blocks-input-max-width;
+    min-width: $blocks-input-max-width;
+  }
+
+  &__tag-title {
+    display: block;
+    max-width: $blocks-input-max-width;
+    min-width: $blocks-input-max-width;
+  }
+
+  &__submit-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: $accent-color;
+
+    border-radius: 8px;
+    color: $text-color;
+    padding: 10px 15px;
+  }
+}
+
+.tag-list {
+  padding: 0;
+  max-width: $blocks-input-max-width;
+  min-width: $blocks-input-max-width;
+
+  &__item {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  &__input {
+    max-width: 300px;
+  }
+
+  &__delete-button {
+    border: 1px solid red;
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+
+    border-radius: 8px;
+    color: red;
+    padding: 10px 15px;
+  }
+
+  &__add-button {
+    border: 1px solid $accent-color;
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+
+    border-radius: 8px;
+    color: $accent-color;
+    padding: 10px 15px;
+    min-height: 52px;
+  }
+}
