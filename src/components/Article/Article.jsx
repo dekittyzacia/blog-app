@@ -32,7 +32,8 @@ const Article = ({ slug }) => {
   }
 
   const article = data.article
-  const isAuthor = article.author.username === user.username
+  const currentUsername = user ? user.username : ''
+  const isAuthor = article.author.username === currentUsername
 
   const onDeleteArticle = () => {
     navigate('/', { replace: true })
@@ -46,7 +47,11 @@ const Article = ({ slug }) => {
         <div className="article__sub-block">
           <Paragraph className="article__description">{article.description}</Paragraph>
           <div className={isAuthor ? '' : 'hidden'}>
-            <Link className="article__button button__edit" to={`/articles/${slug}/edit`} state={{ slug: slug }}>
+            <Link
+              className="article__button button__edit"
+              to={`/articles/${slug}/edit`}
+              state={{ slug: slug, article: article }}
+            >
               Edit
             </Link>
             <Popconfirm
